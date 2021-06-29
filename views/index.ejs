@@ -1,0 +1,24 @@
+<%- include('./components/header') -%>
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-sm-4 border border-muted rounded p-3">
+            <h2 class="text-primary text-center"><i class="fas fa-sign-in-alt"> Login</i></h2>
+            <hr>
+            <form action="/dashboard">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="username" name="username" placeholder="Enter Username" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" id="password" name="password" placeholder="Enter Password" required>
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="btn btn-primary btn-block" value="Login">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<%- include('./components/footer') -%>
+    
