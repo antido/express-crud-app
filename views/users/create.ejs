@@ -1,4 +1,4 @@
-<%- include('./components/header') -%>
+<%- include('../components/header') -%>
 
 <div class="container-fluid mt-3">
     <a href="/dashboard"><i class="fas fa-arrow-circle-left"> BACK</i></a>
@@ -6,7 +6,7 @@
         <div class="col-sm-4 border border-muted rounded">
             <h2 class="text-success text-center py-3"><i class="fas fa-user-plus"> Add User</i></h2>
             <form action="/users/store" method="POST">
-                <h5 class="text-primary">Personal Information:</h5>
+                <h5 class="text-success">Personal Information:</h5>
                 <div class="form-group">
                     <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter Firstname">
                 </div>
@@ -22,7 +22,7 @@
                 <div class="form-group">
                     <input type="text" class="form-control" id="address" name="address" placeholder="Enter Home Address">
                 </div>
-                <h5 class="text-primary">Credentials:</h5>
+                <h5 class="text-success">Credentials:</h5>
                 <div class="form-group">
                     <input type="text" class="form-control" id="username" name="username" placeholder="Enter Preferred Username">
                 </div>
@@ -40,4 +40,4 @@
     </div>
 </div>
 
-<%- include('./components/footer') -%>
+<%- include('../components/footer') -%>
